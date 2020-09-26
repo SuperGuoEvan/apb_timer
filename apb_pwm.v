@@ -14,16 +14,16 @@
 // Description:
 //
 //                                 _________________
-// _______________________________/					\_________________	
+// _______________________________/		     \_________________	
 //	state=idle  |  state=sta_low	state=sta_hig        state=sta_low
-//  <Enable=0>  |					 Enable=1 
+//      <Enable=0>  |			 Enable=1 
 //------------------------------------------------------------------------------
 // Abstract : APB PWM TIMER
 //------------------------------------------------------------------------------
 // 0x00 RW    CTRL[5:0]
 //			  [5:4] Mode  (00idle,01pulse,10flip,11pwm)
 //              [3] Timer Interrupt Enable
-//              [2] Select External input as Clock£¬Textin >= Tpclk
+//              [2] Select External input as ClockÂ£,Textin >= Tpclk
 //              [1] Select External input as Enable
 //              [0] Enable
 // 0x04 RW    Current Value0[31:0]
@@ -48,7 +48,7 @@ module apb_pwm (
   output wire        PREADY,  // Device ready
   output wire        PSLVERR, // Device error response
 
-  input  wire        EXTIN,   // External input£¬Textin >= Tpclk
+  input  wire        EXTIN,   // External inputÂ£Â¬Textin >= Tpclk
 
   output wire        TIMEROUT,  // Timer output
   output wire        TIMERINT); // Timer interrupt output 
