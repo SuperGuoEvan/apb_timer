@@ -1,10 +1,10 @@
 //------------------------------------------------------------------------------
 //  Version and Release Control Information:
 //
-//  File Revision        : $ Revision: 1.0  		 $
+//  File Revision        : $ Revision: 1.0       $
 //  File Date            : $ Date: 2020-09-26 	 $
 //  File name            : $ apb_pwm.v        	 $                                       
-//  Author               : $ Guojia          		 $
+//  Author               : $ Guojia              $
 //  Contact information	 : $ 739819100@qq.com 	 $
 // 
 //------------------------------------------------------------------------------
@@ -22,7 +22,7 @@
 // 0x00 RW    CTRL[5:0]
 //	          [5:4] Mode  (00idle,01pulse,10flip,11pwm)
 //              [3] Timer Interrupt Enable
-//              [2] Select External input as Clock，Textin >= Tpclk
+//              [2] Select External input as Clock，Textin >= 2* Tpclk
 //              [1] Select External input as Enable
 //              [0] Enable
 // 0x04 RW    Current Value0[31:0]
