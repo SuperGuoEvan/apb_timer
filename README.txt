@@ -1,10 +1,10 @@
 //------------------------------------------------------------------------------
 //  Version and Release Control Information:
 //
-//  File Revision		 : $ Revision: 1.0  		 $
-//  File Date		 : $ Date: 2020-09-26 	 $
-//  File name:         		 : $ apb_pwm.v        	 $                                       
-//  Author              		 : $ Guojia          		 $
+//  File Revision        : $ Revision: 1.0  		 $
+//  File Date            : $ Date: 2020-09-26 	 $
+//  File name            : $ apb_pwm.v        	 $                                       
+//  Author               : $ Guojia          		 $
 //  Contact information	 : $ 739819100@qq.com 	 $
 // 
 //------------------------------------------------------------------------------
@@ -12,15 +12,15 @@
 //------------------------------------------------------------------------------
 // Description:
 //
-//                                                            _________________
-// ______________________________________/		         \_________________	
-//	state=idle  |  state=sta_low	state=sta_hig        state=sta_low
-//         <Enable=0>  |		Enable=1 
+//                                        _________________
+// ______________________________________/		             \_________________	
+//	state=idle  |  state=sta_low	         state=sta_hig        state=sta_low
+//  <Enable=0>  |		                         Enable=1 
 //------------------------------------------------------------------------------
 // Abstract : APB PWM TIMER
 //------------------------------------------------------------------------------
 // 0x00 RW    CTRL[5:0]
-//	 [5:4] Mode  (00idle,01pulse,10flip,11pwm)
+//	          [5:4] Mode  (00idle,01pulse,10flip,11pwm)
 //              [3] Timer Interrupt Enable
 //              [2] Select External input as Clock，Textin >= Tpclk
 //              [1] Select External input as Enable
