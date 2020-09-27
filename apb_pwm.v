@@ -2,11 +2,11 @@
 //------------------------------------------------------------------------------
 //  Version and Release Control Information:
 //
-//  File Revision       : $ Revision: 1.0     $
-//  File Date           : $ Date: 2020-09-26  $
-//  File name:          : $ apb_pwm.v         $                                       
-//  Author              : $ Guojia            $
-//  Contact information : $ 739819100@qq.com  $
+//  File Revision       : $ Revision: 1.0         $
+//  File Date           : $ Date: 2020-09-26      $
+//  File name:          : $ apb_pwm.v             $                                       
+//  Author              : $ Guojia                $
+//  Contact information : $ superguoevan@163.com  $
 // 
 //------------------------------------------------------------------------------
 // Verilog-2001 (IEEE Std 1364-2001)
