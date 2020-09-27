@@ -200,7 +200,7 @@ assign  write_enable14 = write_enable & (PADDR[11:2] == 10'h005);
 	  3'b000:  read_mux_word = read_mux_byte0_reg;
       3'b001:  read_mux_word = reg_curr_val0[31:0];
       3'b010:  read_mux_word = read_mux_byte0_reg;
-      3'b011:  read_mux_word = reg_curr_val1[31:0];
+      3'b011:  read_mux_word = sta_hig_curr_val[31:0];
       3'b100:  read_mux_word = read_mux_byte0_reg;	  
       3'b101:  read_mux_word = read_mux_byte0_reg;
       default : read_mux_word = {32{1'bx}};
